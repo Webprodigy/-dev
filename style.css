@@ -134,6 +134,12 @@ nav {
 }
 
 
+/* Link */
+a:focus {
+    outline: 1px solid #fb8500; 
+    background-color: rgba(251, 133, 0, 0.08);
+}
+
 /* Headers Links */
 .logo {
     text-decoration: none;
@@ -372,6 +378,12 @@ nav {
 }
 #work .design-2 .wordpress  {
     background: url(Wordpress.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 24px;
+}
+#work .design-2 .tailwind  {
+    background: url(Tailwind.png);
     background-position: center;
     background-size: cover;
     border-radius: 24px;
