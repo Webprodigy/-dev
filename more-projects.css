@@ -1,0 +1,884 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    overflow-x: hidden;
+}
+                                                /* Header */
+header {
+    position: fixed;
+    background-color: #fff;
+    height: auto;
+    top: 0;
+    width: 100%;
+    padding-left: 12%;
+    padding-right: 12%;
+    z-index: 150;
+}
+nav {
+    display: flex;
+    width: 76%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    flex-flow: row;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #e5e5e5;
+}
+.mail-container {
+    display: flex;
+    flex-flow: row;
+    column-gap: .6em;
+}
+.logo h1 {
+    color: #000;
+}
+.mail-icon {
+    padding-top: .3em;
+}
+
+/* Icon Bar */
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.icon-bar a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 16px;
+    transition: all 0.3s ease;
+}
+.icon-bar a:hover {
+    width: 2em;
+    background-color: #000;
+}
+.facebook {
+    color: #fff;
+    background: #3B5998;
+}
+.twitter {
+    color: #fff;
+    background: #55ACEE;
+}
+.google {
+    color: #fff;
+    background: #dd4b39;
+}
+.linkedin {
+    color: #fff;
+    background: #007bb5;
+}
+.youtube {
+    color: #fff;
+    background: #bb0000;
+}
+.content {
+    font-size: 30px;
+    margin-left: 75px;
+}
+
+
+/* button */
+.btn-hero {
+    color: #fb8500;
+    background-color: transparent;
+    padding: 12px 25px;
+    border: 0.5px solid #fb8500;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+.btn-hero:hover {
+    background-color: #fb8500;
+    color: #fff;
+    border: 0.5px solid #fb8500;
+}
+
+
+/* Link */
+a:focus {
+    outline: 1px solid #fb8500; 
+    background-color: rgba(251, 133, 0, 0.08);
+}
+
+/* Work Links */
+#work a {
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+} 
+#work a::before {
+    margin-left: auto;
+}
+#work a::after, #services a::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fb8500;
+    display: block;
+    transition: 0.5s;
+}
+#work a:hover::after, #services a:hover::before {
+    width: 100%;
+}
+
+/* Headers Links */
+.logo {
+    text-decoration: none;
+    
+}
+.mail-container a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+} 
+.mail-container a::before {
+  margin-left: auto;
+}
+.mail-container a::after, header a::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fb8500;
+    display: block;
+    transition: 0.5s;
+}
+.mail-container a:hover::after, header a:hover::before {
+    width: 100%;
+}
+
+
+
+  /* Work */
+  #work {
+    height: auto;
+    margin-bottom: 15vh;
+}
+
+#work .main {
+    display: flex;
+    flex-flow: column;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 15vh;
+}
+
+#work h1 {
+    font-size: 1.6em;
+    text-align: center;
+}
+
+/* Design 1 */
+#work .design-1 {
+    height: auto;
+/*    border: 1px solid #000;*/
+    margin-top: 12vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+#work .design-1 .dad {
+    background: url(Dadjokes.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 24px;
+}
+#work .design-1 .memegen {
+    background: url(memegen.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 24px;
+}
+#work .design-1 .calc {
+    background: url(calc.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 24px;
+}
+#work .design-1 .explain {
+    padding: 2em;
+    text-align: center;
+    padding-bottom: 0;
+}
+#work .design-1 .explain h1, #work .design-1 .explain p {
+    margin-bottom: .9em;
+}
+#work .design-1 p {
+    color: #8b8989;
+}
+#work .design-1 .links {
+    display: flex;
+    flex-flow: row;
+/*    justify-content: space-between;*/
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    margin-top: 3em;
+    justify-content: center;
+    column-gap: 1em;
+}
+#work .design-1 .links a {
+    cursor: pointer;
+}
+#work .design-1 .test {
+    justify-content: center;
+}
+
+/* Design 2 */
+#work .design-2 {
+    height: auto;
+/*    border: 1px solid #000;*/
+    margin-top: 12vh;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+#work .design-2 .explain {
+    padding: 2em;
+    text-align: center;
+    padding-bottom: 0;
+}
+#work .design-2 .explain h1, #work .design-2 .explain p {
+    margin-bottom: .9em;
+}
+#work .design-2 p {
+    color: #8b8989;
+}
+#work .design-2 .links {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    margin-top: 3em;
+    justify-content: center;
+    column-gap: 1em;
+}
+#work .design-2 .links a {
+    cursor: pointer;
+}
+#work .design-2 .manager  {
+    background: url(Taylorb.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 24px;
+}
+#work .design-2 .mouse  {
+    background: url(mouse.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 24px;
+}
+
+
+
+                                                /* Landing Page */
+/* Above Header */
+#above-header .main {
+    display: flex;
+    padding: 0 20em;    
+}
+.read-box {
+    border-left: 1px solid #000;
+    padding-left: 1em;
+}
+
+/* Top Header */
+#top-header {
+    margin-bottom: 7vh;
+}
+
+/* Main */
+#landing-page-main {
+    margin-top: 10vh;
+}
+/*
+#top-header {
+    padding-left: 12%;
+}
+*/
+#landing-page-main h1 {
+    font-size: 3em;
+}
+
+.ajd-info {
+    margin-top: 3em;
+}
+
+
+#freelancer, #business, #e-commerce, #non-profit {
+    margin-bottom: 5vh;
+}
+.freelancer-info {
+    margin-top: 3em;
+}
+.big-business-info {
+    margin-top: 3em;
+}
+.e-commerce-info {
+    margin-top: 3em;
+}
+.non-profit-info {
+    margin-top: 3em;
+}
+
+.topic-header {
+    margin-bottom: 1em;
+}
+.images-after-info {
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding-left: 10%;
+}
+
+.change-header {
+    font-size: 1.2em;
+    color: #000;
+    margin-bottom: 0.5em;
+}
+.change {
+    display: flex;
+    color: #fb8500;
+}
+
+/* Go-to Side List */
+.go-to {
+/*    position: fixed;*/
+    position: absolute;
+    margin-left: 1050px;
+    margin-top: 8em;
+    margin-bottom: 200vh;
+    border-left: 1px solid #e5e5e5;
+    padding-left: .5em;
+    display: fixed; 
+    margin-left: 1050px; 
+    margin-top: 10em;
+}
+.list-padding {
+    padding-left: 5%;
+}
+.go-to-link-box {
+    display: flex;
+}
+.link-name {
+    font-size: .9em;
+    color: #8b8989;
+    cursor: pointer;
+}
+
+/* Padding class */
+.padding {
+    padding: 0 20em;
+}
+.landing-page-main {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    line-height: 2em;
+    margin-top: 2vh;
+}
+.landing-page-main h5 {
+    font-size: 1.2em;
+    border-top: 1px solid #000;
+    line-height: 3em;
+}
+
+
+  /* Footer */
+
+  footer {
+    height: auto;
+    background-color: #000;
+    color: #fff;
+    padding: 1em 0;
+    padding-bottom: .2em;
+}
+footer .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+footer h2 {
+    margin-top: .5em;
+    margin-bottom: 1.5em;
+}
+footer p {
+    font-size: .8em;
+}
+footer span {
+    margin: 1em 0;
+}
+footer .end {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 0;
+    margin-bottom: 1em;
+}
+footer i {
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 1070px) and (min-width: 851px) {
+    /* Header */
+    .mail-container 
+    {
+        column-gap: .2em;
+        padding-top: .3em;
+    }
+    .mail-icon
+    {
+        padding-top: .2em;
+    }
+    
+    /* Work */
+    #work .main 
+    {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+    #services a 
+    {
+        font-size: .8em;
+    } 
+    #work .links h4, #about p 
+    {
+        font-size: .8em;
+    }
+    
+    /* Fonts */
+    p 
+    {
+        font-size: .8em;
+    }
+    #services p 
+    {
+        font-size: .8em;
+    }
+}
+@media screen and (max-width: 850px) and (min-width: 601px) {
+    /* Header */
+    .mail-container 
+    {
+        column-gap: .2em;
+        padding-top: .2em;
+    }
+    .mail-icon
+    {
+        padding-top: .2em;
+    }
+    
+    /* Services */
+    #services .main 
+    {
+        padding-top: 15vh;
+        flex-wrap: wrap;
+    }
+    #services .container 
+    {
+        flex-direction: column;
+    }
+    #services .mto-use
+    {
+        margin-top: 5vh;
+        padding: 2em;
+        width: 80%;
+        margin-left: 3%;;
+    }
+    
+    /* Work */
+    #work .main 
+    {
+        display: flex;
+        padding-left: 12%;
+        padding-right: 12%;
+        padding-top: 15vh;
+    }
+    #work .design-1, #work .design-2
+    {
+        padding-top: 1em;
+    }
+    #work .design-1 .explain, #work .design-2 .explain 
+    {
+        padding: .5em;
+    }
+    #work .explain h5
+    {
+        font-size: .7em;
+    }
+    #work .design-1 h1, #work .design-2 h1 
+    {
+        font-size: 1em;
+    }
+    #work .design-1 .links, #work .design-2 .links 
+    {
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-top: 1.5em;
+    }
+    
+    /* About */
+    #about .main
+    {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    /* Fonts */
+    p {
+        font-size: .8em;
+    }
+    #services p {
+        font-size: .8em;
+    }
+    #about .second p {
+        font-size: .8em;
+    }
+}
+@media screen and (max-width: 600px) and (min-width: 481px) {                                                 /* Header */
+    /* Header */
+    header 
+    {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    nav 
+    {
+        width: 80%;
+    }
+    .mail-container 
+    {
+        column-gap: .2em;
+        padding-top: .25em;
+    }
+    .mail-icon
+    {
+        padding-top: .2em;
+    }
+    
+    /* Hero */
+    #hero h5
+    {
+        font-size: .8em;
+    }
+    #hero h1
+    {
+        font-size: 2em;    
+    }
+    
+    /* Services */
+    #services h1, #work h1, #about h1
+    {
+        font-size: 1.3em;
+    }
+    #services .container 
+    {
+        flex-direction: column;
+    }
+    #services .mto-use
+    {
+        margin-top: 5vh;
+        padding: 2em;
+        width: 80%;
+        margin-left: 3%;;
+    }
+    
+    /* Work */
+    #work .main 
+    {
+        display: flex;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 15vh;
+    }
+    #work .design-1, #work .design-2
+    {
+        padding-top: 1em;
+    }
+    #work .design-1 .explain, #work .design-2 .explain 
+    {
+        padding: .5em;
+    }
+    #work .explain h5
+    {
+        font-size: .5em;
+    }
+    #work .explain p 
+    {
+        font-size: .8em;
+    }
+    #work .design-1 h1, #work .design-2 h1 
+    {
+        font-size: 1em;
+    }
+    #work .design-1 .links, #work .design-2 .links 
+    {
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-top: 1.5em;
+        font-size: .8em;
+    }
+    
+    /* About */
+    #about .first 
+    {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #about p 
+    {
+        font-size: .8em;
+    }
+    #about .second 
+    {
+        flex-flow: column;
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+    #about .second .b-border
+    {
+        border: 0.5px solid #569bbc;
+    }
+}
+@media screen and (max-width: 480px) and (min-width: 260px) {
+    /* Header */
+    header 
+    {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    nav 
+    {
+        width: 80%;
+        height: 2em;
+        padding-top: 2%;
+        padding-bottom: 1%;
+        flex-flow: row;
+        justify-content: space-between;
+        border-bottom: 0.5px solid #e5e5e5;
+    }
+    header h1, header a 
+    {
+        font-size: .9em;
+    }
+    .mail-container 
+    {
+        column-gap: .2em;
+    }
+    .mail-icon
+    {
+        padding-top: .2em;
+    }
+    
+    /* Hero */
+    #hero h5
+    {
+        font-size: .7em;
+    }
+    #hero h1
+    {
+        font-size: 1.5em;    
+    }
+    
+    /* Services */
+    #services .main 
+    {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    #services h1, #work h1, #about h1, #contact  h2
+    {
+        font-size: 1.1em;
+    }
+    #services .container 
+    {
+        margin-left: 1em;
+        margin-right: 1em;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #services .mto-use
+    {
+        margin-top: 5vh;
+        padding: 2em;
+        width: 80%;
+    }
+    
+    /* Work */
+    #work .main 
+    {
+        display: flex;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 15vh;
+    }
+    #work .design-1, #work .design-2
+    {
+        padding-top: 1em;
+    }
+    #work .design-1 .explain, #work .design-2 .explain 
+    {
+        padding: .5em;
+    }
+    #work .explain h5
+    {
+        font-size: .5em;
+    }
+    #work .explain p, #contact p
+    {
+        font-size: .8em;
+    }
+    #work .design-1 h1, #work .design-2 h1 
+    {
+        font-size: 1em;
+    }
+    #work .design-1 .links, #work .design-2 .links 
+    {
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-top: 1.5em;
+        font-size: .8em;
+    }
+    /* Design 1 */
+/*
+    #work .design-1, #work .design-2 
+    {
+        margin-top: 12vh;
+        display: flex;
+        flex-direction: row;
+    }
+*/
+    #work .design-1, #work .design-2 
+    {
+        height: auto;
+        margin-top: 12vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }      
+    #work .design-2 
+    {
+        flex-direction: column-reverse;
+    }
+    #work .explain
+    {
+        border: 0.5px solid #b1adad;
+    }
+    #work .design-1 .photo, #work .design-2 .photo {
+        height: 40vh;
+        border-radius: 15px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    
+    
+/*
+    #work .design-1
+    {
+        border: 0.5px solid #b1adad;
+    }
+*/
+    
+    /* About */
+    #about .main 
+    {
+        padding-top: 10vh;
+        text-align: center;
+    }
+    #about .first 
+    {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #about p, #about .second p
+    {
+        font-size: .8em;
+    }
+    #about .second 
+    {
+        flex-flow: column;
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+    #about .second .b-border
+    {
+        border: 0.5px solid #569bbc;
+    }
+    
+    /* Contact */
+    #contact h5 {
+        font-size: .7em;
+    }
+    
+    /* Footer */
+    footer .main
+    {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    footer h2
+    {
+        font-size: 1em;
+    }
+    footer p
+    {
+        font-size: .7em;
+    }
+}
+@media screen and (max-width: 350px) and (min-width: 260px) {
+    /* Header */
+    header {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    nav {
+        width: 90%;
+        height: 2em;
+        padding-top: 2%;
+        padding-bottom: 1%;
+        flex-flow: row;
+        justify-content: space-between;
+        border-bottom: 0.5px solid #e5e5e5;
+    }
+    header h1, header a {
+        font-size: .9em;
+    }
+    .mail-container 
+    {
+        column-gap: .5em;
+    }
+    .mail-icon
+    {
+        padding-top: .2em;
+    }
+    
+    /* Footer */
+    footer .main
+    {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    footer h2
+    {
+        font-size: .9em;
+    }
+    footer p
+    {
+        font-size: .6em;
+    }
+}
