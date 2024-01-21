@@ -423,6 +423,10 @@ a:focus {
     background: url(calc.jpg);
 }
 
+.calc {
+    background: url(mouse.jpg);
+}
+
 .more-projects ion-icon {
     margin-left: .8em;
 }
