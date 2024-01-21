@@ -407,6 +407,22 @@ a:focus {
     column-gap: 1em;
     font-size: 1.2em;
 }
+.dad {
+    background: url(Dadjokes.jpg);
+}
+
+.taylor {
+    background: url(Taylorb.jpg);
+}
+
+.memgen {
+    background: url(memegen.jpg);
+}
+
+.calc {
+    background: url(Dadjokes.jpg);
+}
+
 .more-projects ion-icon {
     margin-left: .8em;
 }
